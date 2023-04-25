@@ -15,14 +15,14 @@ const Home = () => {
   }, [username]);
   // const url = ["https://images7.alphacoders.com/910/thumbbig-910442.webp"];
   useEffect(() => {
-    fetch("http://localhost:8080/user/home")
+    fetch("https://food-delivery-berlin.onrender.com/user/home")
       .then((data) => data.json())
       .then((res) => setHome(res));
   }, []);
 
   const handleClick = () => {
     let token = sessionStorage.getItem("userToken");
-    fetch("http://localhost:8080/user/profile", {
+    fetch("https://food-delivery-berlin.onrender.com/user/profile", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
