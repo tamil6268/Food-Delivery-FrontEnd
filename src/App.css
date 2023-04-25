@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+#container{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#parent{
+  display:inline-flex;
+  margin: 10px;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+}
+#parent .child,button{
+  font-size:10px ;
+}
+
+
+/* Loader home page */
+
+#loader{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background: url("https://media.architecturaldigest.com/photos/5a145119fb80d22246481a61/16:9/w_1280,c_limit/copper-led-string-lights-1.gif");
+  background-size: cover; */
+  background-color: black;
+}
+#loader div{
+  width: 400px;
+  height:200px;
+  /* border-radius: 50%; */
+  border:4px dashed black;
+  background: url("https://bestanimations.com/media/bulbs/305834216lightbulb-pendulum-gif.gif");
+  background-size: cover;
+  /* animation: rotate 4s linear infinite; */
+}
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
