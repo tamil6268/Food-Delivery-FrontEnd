@@ -32,7 +32,7 @@ export const Signup = () => {
   const handleMessage = () => {
     console.log(message);
     axios
-      .get("http://localhost:8080/signup")
+      .get("https://food-delivery-berlin.onrender.com/signup")
       .then((data) => {
         console.log(data);
         setMessage(data.data[0].message);
@@ -56,7 +56,7 @@ export const Signup = () => {
         id="bgImg-home"
       />
       <h2 id="Head">Welcome !!</h2>
-      <form action="http://localhost:8080/signup" method="post">
+      <form action="https://food-delivery-berlin.onrender.com/signup" method="post">
         <div id="box">
           <input
             type="text"
@@ -96,7 +96,7 @@ export const Login = () => {
 
   const handleSignin = () => {
     axios
-      .get("http://localhost:8080/signin")
+      .get("https://food-delivery-berlin.onrender.com/signin")
       .then((data) => {
         console.log(data);
         setMessage(data.data[0].message);
@@ -126,7 +126,7 @@ export const Login = () => {
         id="bgImg-home"
       />
       <h2 id="Head">Welcome !!</h2>
-      <form action="http://localhost:8080/signin" method="post">
+      <form action="https://food-delivery-berlin.onrender.com/signin" method="post">
         <div id="box">
           <input
             type="text"
